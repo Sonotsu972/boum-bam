@@ -1,3 +1,92 @@
+header{
+    background-image:url(shenron-the-dragon.jpg);
+    top: 80px;
+    height:1000px;
+    width: 100%;
+    background-attachment:fixed;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    left: 0; 
+    z-index: -1;
+    filter: blur(4px);
+}
+
+/*navbar*/
+a {
+	text-decoration: none; 
+}
+
+.et-hero-tabs,
+.et-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background: #eee;
+		text-align: center;
+		padding: 0 2em;
+}
+
+#navball{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    box-shadow: 0 0 20px rgba(250, 250, 250, 0.288);
+    background: rgb(255, 136, 0);
+    z-index: 50;
+    position: fixed;
+    font-family: 'Oswald', sans-serif;
+}
+
+#navball--top {
+    position: fixed;
+    top: 0;
+    }
+.Dragonlogo{
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-end; 
+    flex: 1; 
+    padding: 0px 15px;
+}
+
+.Dragon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(4, 0, 255);
+    letter-spacing: 0.1rem;
+    transition: all 0.5s ease;
+    font-size: 0.9rem;
+    padding: 0px 15px;	  
+}
+
+.Dragon:hover {
+    color:rgb(255, 102, 0);
+    background:   rgb(0, 60, 255);
+}
+.Dragon-slider {
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 6px;
+    background: #66B1F1;
+    transition: left 0.3s ease;
+}
+
+@media (min-width: 800px) { 
+.Dragons .Dragon  {
+    font-size: 1rem;
+}
+.et-slide .Dragon  {
+    font-size: 1rem;
+}
+}
+/*navbar fin*/
 ul {
     list-style-type: none;
     margin: 0;

@@ -145,6 +145,7 @@ ul {
     animation: slide 10s infinite ease-in-out forwards;
   }
 
+/*video*/
   #video {
       text-align: center;
       height: 500px;
@@ -157,3 +158,10 @@ ul {
         height: 100%;
         width: 900px;
     }
+ /*video fin*/
+
+ /*univer*/
+ #univers {
+     text-align: center;
+     font-family: 'Oswald', sans-serif;
+ }

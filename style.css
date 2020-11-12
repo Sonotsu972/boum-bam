@@ -145,30 +145,27 @@ ul {
     animation: slide 10s infinite ease-in-out forwards;
   }
 
-  .video{
-       text-align: center;
-       margin-left: auto;
-       margin-right: auto;
-       margin-bottom: 35px;
-     }
-
-  .video-item{ 
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      margin: auto;
+  #video {
+      text-align: center;
+      height: 500px;
+      margin-left:auto;
+      margin-right:auto;
+      margin-bottom:35px;
+    }
+    
+    #videou{
+        height: 100%;
+        width: 900px;
+    }
+    body{
+    
+        color:black;
+        background-color:white;
+        background-image:url(shenron-the-dragon.jpg);
+        background-repeat:no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
   
-      height: 50px;
-      width: 50px; 
-  }
-  body {
-    color:black;
-    background-color:white;
-    background-image:url(shenron-the-dragon.jpg);
-    background-repeat:no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+      
     }

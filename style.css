@@ -165,3 +165,16 @@ ul {
      text-align: center;
      font-family: 'Oswald', sans-serif;
  }
+ /*univer fin*/
+    body{
+    
+        color:black;
+        background-color:white;
+        background-image:url(shenron-the-dragon.jpg);
+        background-repeat:no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+  
+      
+    }

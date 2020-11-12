@@ -1,16 +1,4 @@
-header{
-    background-image:url(shenron-the-dragon.jpg);
-    top: 80px;
-    height:1000px;
-    width: 100%;
-    background-attachment:fixed;
-    background-position:center;
-    background-repeat:no-repeat;
-    background-size:cover;
-    left: 0; 
-    z-index: -1;
-    filter: blur(4px);
-}
+
 
 /*navbar*/
 a {
@@ -30,22 +18,26 @@ a {
 		padding: 0 2em;
 }
 
+#nav{
+    z-index: 1;
+    width: 100%;
+    background: rgb(235, 139, 37);
+    position: fixed;
+}
 #navball{
     display: flex;
     flex-direction: row;
-    width: 100%;
     height: 50px;
     box-shadow: 0 0 20px rgba(250, 250, 250, 0.288);
-    background: rgb(212, 129, 34);
-    z-index: 50;
-    position: fixed;
     font-family: 'Oswald', sans-serif;
+    background: rgb(235, 139, 37);
 }
 
 #navball--top {
     position: fixed;
     top: 0;
     }
+
 .Dragonlogo{
     display: flex; 
     align-items: center; 
@@ -58,7 +50,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(0, 26, 255);
+    color: rgb(10, 48, 129);
     letter-spacing: 0.1rem;
     transition: all 0.5s ease;
     font-size: 0.9rem;
@@ -67,7 +59,7 @@ a {
 
 .Dragon:hover {
     color:rgb(255, 102, 0);
-    background:   rgb(0, 60, 255);
+    background: rgb(10, 48, 129);
 }
 .Dragon-slider {
     position: absolute;
@@ -152,6 +144,7 @@ ul {
       margin-left:auto;
       margin-right:auto;
       margin-bottom:35px;
+      padding: 5%;
     }
     
     #videou{
@@ -162,19 +155,24 @@ ul {
 
  /*univer*/
  #univers {
-     text-align: center;
-     font-family: 'Oswald', sans-serif;
+     background: rgb(235, 139, 37);
+     width: 100%;
+     height: 350px;
+     padding-top: 2%;
+     font-size: 25px;
  }
+  p{
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    color: rgb(10, 48, 129);
+  }
  /*univer fin*/
     body{
-    
-        color:black;
-        background-color:white;
-        background-image:url(shenron-the-dragon.jpg);
+        background-image:url(Capture_decran_1.png);
         background-repeat:no-repeat;
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
-  
+        margin: 0;
       
     }

@@ -121,8 +121,6 @@ ul {
     transform: translateY(-50%);
   }
   
- 
-  
   @keyframes slide{
     0%, 20%, 100%{
       left: 0;
@@ -145,4 +143,21 @@ ul {
   
   #slides{
     animation: slide 10s infinite ease-in-out forwards;
+  }
+
+  .video{
+       display: flex;
+       position:relative;
+     }
+
+  .video-item{ 
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+  
+      height: 50px;
+      width: 50px; 
   }

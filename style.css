@@ -1,16 +1,4 @@
-header{
-    background-image:url(shenron-the-dragon.jpg);
-    top: 80px;
-    height:1000px;
-    width: 100%;
-    background-attachment:fixed;
-    background-position:center;
-    background-repeat:no-repeat;
-    background-size:cover;
-    left: 0; 
-    z-index: -1;
-    filter: blur(4px);
-}
+
 
 /*navbar*/
 a {
@@ -30,22 +18,28 @@ a {
 		padding: 0 2em;
 }
 
+#nav{
+    z-index: 1;
+    width: 100%;
+    background: rgb(235, 139, 37);
+    position: fixed;
+    padding-top: 0px;
+}
 #navball{
     display: flex;
     flex-direction: row;
-    width: 100%;
     height: 50px;
     box-shadow: 0 0 20px rgba(250, 250, 250, 0.288);
-    background: rgb(212, 129, 34);
-    z-index: 50;
-    position: fixed;
     font-family: 'Oswald', sans-serif;
+    background: rgb(235, 139, 37);
+    padding-top: 0px;
 }
 
 #navball--top {
     position: fixed;
     top: 0;
     }
+
 .Dragonlogo{
     display: flex; 
     align-items: center; 
@@ -58,7 +52,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(0, 26, 255);
+    color: rgb(10, 48, 129);
     letter-spacing: 0.1rem;
     transition: all 0.5s ease;
     font-size: 0.9rem;
@@ -67,7 +61,7 @@ a {
 
 .Dragon:hover {
     color:rgb(255, 102, 0);
-    background:   rgb(0, 60, 255);
+    background: rgb(10, 48, 129);
 }
 .Dragon-slider {
     position: absolute;
@@ -86,85 +80,82 @@ a {
     font-size: 1rem;
 }
 }
-/*navbar fin*/
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  #slider{
+#stage {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  height: 900px;
+  padding-top: 0px;
+
+}
+
+#stage a {
+  position: absolute;
+  width: 100%;
+  height: 900px;
+}
+#stage a img {
     position: relative;
-    max-width: 100%;
-    overflow: hidden;
-    height: 600px;
-  }
-  
-  #slides{
-    position: absolute;
-    top: 10px;
-    left: 0;
-    display: flex;
-    max-height: 100%;
-  }
-  
-  #slides figure{
-    display: inline-block;
-    width: 100vw;
-    max-height: 100%;
-    margin: 0;
-  }
-  
-  #slides figure img{
     width: 100%;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  
-  @keyframes slide{
-    0%, 20%, 100%{
-      left: 0;
-    }
-    35%, 50%{
-      left: -100vw;
-    }
-  70%, 95%{
-    left: -200vw;
-  }
-  }
-  
-  #slide{
-    animation-name: slide;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-  }
-  
-  #slides{
-    animation: slide 10s infinite ease-in-out forwards;
+    ;
   }
 
+#stage a:nth-of-type(1) {
+  animation-name: fader;
+  animation-delay: 3s;
+  animation-duration: 0.8s;
+  z-index: 20;
+}
+#stage a:nth-of-type(2) {
+  z-index: 10;
+}
+#stage a:nth-of-type(n+3) {
+  display: none;
+}
+
+@keyframes fader {
+  from { opacity: 1.0; }
+  to   { opacity: 0.0; }
+}
+
+/*video*/
   #video {
       text-align: center;
       height: 500px;
       margin-left:auto;
       margin-right:auto;
       margin-bottom:35px;
+      padding: 5%;
     }
     
     #videou{
         height: 100%;
         width: 900px;
     }
+ /*video fin*/
+
+ /*univer*/
+ #univers {
+     background: rgb(235, 139, 37);
+     width: 100%;
+     height: 350px;
+     padding-top: 2%;
+     font-size: 25px;
+ }
+  p{
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    color: rgb(10, 48, 129);
+  }
+ /*univer fin*/
     body{
-    
-        background-image:url(shenron-the-dragon.jpg);
+        background-image:url(Capture_decran_1.png);
         background-repeat:no-repeat;
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
-  
+        margin: 0;
       
     }
     
+

@@ -13,10 +13,10 @@
 <body>
   <nav>
     <ul id="navball">
-      <a class="Dragon" href="index.html">Kamé house</a>
-      <a class="Dragon" href="presentation.html">L'univers Dragon ball</a>
-      <a class="Dragon" href="contact.html"> Contact</a>
-      <a class="Dragonlogo" href="index.html"> <img src="dragonball_z_logo_by_cmorigins_d5alg31-fullview.jpg"
+      <a class="Dragon" href="#stage">Kamé house</a>
+      <a class="Dragon" href="#univers">L'univers Dragon ball</a>
+      <a class="Dragon" href="#contact"> Contact</a>
+      <a class="Dragonlogo" href="#stage"> <img src="dragonball_z_logo_by_cmorigins_d5alg31-fullview.jpg"
           width="60px" height="50px"></a>
     </ul>
   </nav>
@@ -30,10 +30,9 @@
     </div>
     
 <section id="video">
-    <iframe id="videou"src="https://www.youtube.com/embed/TNwI_1XE1hE" frameborder="10">
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen>
-    </iframe>
+  <video id="videou" controls>
+    <source src="dragon-ball-z-amv-believer.mp4" type="video/mp4">
+  </video>
   </section>
 
 <section id="univers">
@@ -45,10 +44,45 @@
   Une suite directe au manga, intitulée Dragon Ball Super, a été diffusée du 5 juillet 2015 au 25 mars 2018 sur Fuji TV.</p>
 </section>
 
+<section id="contact">
 
+<div class="fcf-body">
 
+    <div id="fcf-form">
+    <h3 class="fcf-h3">Nous contactez :</h3>
 
+    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+        
+        <div class="fcf-form-group">
+            <label for="Name" class="fcf-label">Votre Nom :</label>
+            <div class="fcf-input-group">
+                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+            </div>
+        </div>
 
+        <div class="fcf-form-group">
+            <label for="Email" class="fcf-label">Votre adresse e-mail :</label>
+            <div class="fcf-input-group">
+                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <label for="Message" class="fcf-label">Votre message :</label>
+            <div class="fcf-input-group">
+                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Envoyer le Message</button>
+        </div>
+
+    </form>
+    </div>
+
+</div>
+</section>
 </body>
 
 
